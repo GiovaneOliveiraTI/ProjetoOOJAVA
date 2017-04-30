@@ -6,7 +6,6 @@ import br.com.casadocodigo.livraria.produtos.Livro;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
 import br.com.casadocodigo.livraria.produtos.MiniLivro;
 
-
 public class RegrasdeDesconto {
 
 	public static void main(String[] args) {
@@ -20,7 +19,8 @@ public class RegrasdeDesconto {
 		livro.setValor(59.90);
 
 		if (!livro.aplicaDescontoDe(0.3)) {
-			System.out.println("Desculpe!(-_-) Desconto do Livros físicos não pode ser maior que 30%.");
+			System.out
+					.println("Desculpe!(-_-) Desconto do Livros físicos não pode ser maior que 30%.");
 
 		} else {
 			System.out.println("O Valor do livro:" + livro.getValor());
@@ -30,17 +30,15 @@ public class RegrasdeDesconto {
 		ebook.setValor(29.90);
 
 		if (!ebook.aplicaDescontoDe(0.15)) {
-			System.out.println("Desculpe(-_-)!Desconto para ebooks não pode ser maior que 15%.");
+			System.out
+					.println("Desculpe(-_-)!Desconto para ebooks não pode ser maior que 15%.");
 
 		} else {
 			System.out.println("Valor do ebook com desconto é:"
 					+ ebook.getValor());
 
 		}
-		
-	
-		
-		
+
 	}
 
 }

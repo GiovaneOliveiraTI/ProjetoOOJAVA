@@ -62,8 +62,7 @@ public abstract class Livro implements Produto {
 
 	public Livro(Autor autor) {
 		if (autor == null) {
-			throw new AutorNuloException(
-					"O autor do Livro não pode ser nulo!");
+			throw new AutorNuloException("O autor do Livro não pode ser nulo!");
 
 		}
 		this.autor = autor;
@@ -105,7 +104,7 @@ public abstract class Livro implements Produto {
 	}
 
 	public int compareTo(Produto outro) {
-	return (int) (this.getValor() - outro.getValor());
+		return (int) (this.getValor() - outro.getValor());
 	}
 
 }
